@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Drone Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="top-container">
+        <div class="panel">
+            <h2>STATUS PANEL</h2>
+            <div class="status-container">
+                <div class="status-item">
+                    <div class="status-label">CONNECTION</div>
+                    <div class="status-value disconnected" id="connectionStatus">DISCONNECTED</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-label">BATTERY</div>
+                    <div class="status-value" id="batteryStatus">85%</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-label">SIGNAL</div>
+                    <div class="status-value" id="signalStatus">STRONG</div>
+                </div>
+            </div>
+            
+            <div class="rpm-bar-container">
+                <div class="status-label">OVERALL RPM</div>
+                <div class="rpm-bar">
+                    <div class="rpm-fill" id="rpmFill"></div>
+                    <div class="rpm-text" id="rpmText">0 RPM</div>
+                </div>
+            </div>
+            
+            <div class="wifi-container">
+                <button class="wifi-button" id="wifiButton">SCAN FOR WIFI NETWORKS</button>
+                <div class="wifi-list" id="wifiList">
+                    <div class="wifi-item">ESP8266_Drone_Control</div>
+                    <div class="wifi-item">Home_WiFi_Network</div>
+                    <div class="wifi-item">Office_Network</div>
+                    <div class="wifi-item">Guest_WiFi</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel data-panel">
+            <h2>DATA TRANSMISSION</h2>
+            <div class="data-display" id="dataDisplay">
+                <div>> System initialized</div>
+                <div>> Waiting for connection...</div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class = "control panel">
+            <h2>CONTROL PANEL</h2>
+            <div class="joystick-container">
+                <div class="joystick-wrapper">
+                    <div class="joystick-base">
+                        <div class="joystick-handle" id="joystickLeft"></div>
+                    </div>
+                    <div class="joystick-label">LEFT JOYSTICK</div>
+                </div>
+                <div class="joystick-wrapper">
+                    <div class="joystick-base">
+                        <div class="joystick-handle" id="joystickRight"></div>
+                    </div>
+                    <div class="joystick-label">RIGHT JOYSTICK</div>
+                </div>
+            </div>
+            <div class="throttle-container">
+                <div class="throttle-item">
+                    <div class="throttle-label">MOTOR 1</div>
+                    <div class="throttle-bar">
+                        <div class="throttle-fill" id="throttle1"></div>
+                    </div>
+                    <div class="throttle-value" id="throttleValue1">0%</div>
+                </div>
+                <div class="throttle-item">
+                    <div class="throttle-label">MOTOR 2</div>
+                    <div class="throttle-bar">
+                        <div class="throttle-fill" id="throttle2"></div>
+                    </div>
+                    <div class="throttle-value" id="throttleValue2">0%</div>
+                </div>
+                <div class="throttle-item">
+                    <div class="throttle-label">MOTOR 3</div>
+                    <div class="throttle-bar">
+                        <div class="throttle-fill" id="throttle3"></div>
+                    </div>
+                    <div class="throttle-value" id="throttleValue3">0%</div>
+                </div>
+                <div class="throttle-item">
+                    <div class="throttle-label">MOTOR 4</div>
+                    <div class="throttle-bar">
+                        <div class="throttle-fill" id="throttle4"></div>
+                    </div>
+                    <div class="throttle-value" id="throttleValue4">0%</div>
+                </div>
+            </div>
+            
+            <div class="controls-container">
+                <button class="control-button calibrate" id="escCalibrate">ESC CALIBRATION</button>
+                <button class="control-button calibrate" id="motorCalibrate">MOTOR CALIBRATION</button>
+                <button class="control-button" id="takeoff">TAKEOFF</button>
+                <button class="control-button" id="land">LAND</button>
+            </div>
+        </div>
+       
+       
+    
+   <script src="script.js"></script>
+</body>
+</html>
