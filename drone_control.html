@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Drone Controller</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href = "style.css">
 </head>
 <body>
+    <div class="header">
+        <h1>DRONE CONTROL STATION</h1>
+        <p class="subtitle">Futuristic Interface with Dual Joystick Control</p>
+    </div>
+    
     <div class="container">
-            <div class="top-container">
-        <div class="panel">
+        <div class="top-bar">
+            <div class="panel">
             <h2>STATUS PANEL</h2>
             <div class="status-container">
                 <div class="status-item">
@@ -24,7 +29,7 @@
                     <div class="status-label">SIGNAL</div>
                     <div class="status-value" id="signalStatus">STRONG</div>
                 </div>
-            </div>
+             </div>
             
             <div class="rpm-bar-container">
                 <div class="status-label">OVERALL RPM</div>
@@ -44,7 +49,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="panel data-panel">
             <h2>DATA TRANSMISSION</h2>
             <div class="data-display" id="dataDisplay">
@@ -52,9 +56,10 @@
                 <div>> Waiting for connection...</div>
             </div>
         </div>
-    </div>
-    </div>
-        <div class = "control panel">
+
+        </div>
+    
+        <div class="panel">
             <h2>CONTROL PANEL</h2>
             <div class="joystick-container">
                 <div class="joystick-wrapper">
@@ -70,6 +75,7 @@
                     <div class="joystick-label">RIGHT JOYSTICK</div>
                 </div>
             </div>
+            
             <div class="throttle-container">
                 <div class="throttle-item">
                     <div class="throttle-label">MOTOR 1</div>
@@ -108,9 +114,7 @@
                 <button class="control-button" id="land">LAND</button>
             </div>
         </div>
-       
-       
-    
-   <script src="script.js"></script>
+    </div>
+    <style src="script.js"></style>
 </body>
 </html>
